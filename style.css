@@ -1,0 +1,28 @@
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+}
+
+body {
+    background-color:  #ffe6e6;
+}
+
+div {
+    border : 5px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 780px;
+}
+
+#box1 {
+
+}
+
+#box2 {
+
+}
+
+#code {
+    font-size: 80px;
+}
+
