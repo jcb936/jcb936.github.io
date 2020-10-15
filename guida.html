@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guida compilazione Ninja</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit" style="background-color: #ffe6e6;">
+  <div class="stackedit__html"><h1 id="come-compilare-lhomework">Come compilare l’homework</h1>
+    <p><strong>NOTA</strong>: Una volta che hai eseguito CMake per la prima volta puoi compilare direttamente con Ninja ogni volta che devi ricompilare qualcosa.</p>
+<p>La compilazione dell’homework si basa tramite Ninja. Prima di poter compilare con Ninja, bisogna eseguire CMake per creare i file per la compilazione.</p>
+<ul>
+<li>Apri Visual Studio Code e assicurati di avere installati C++ e CMake Tools</li>
+<li>Apri la cartella  <code>HW1/out/</code> con Visual Studio Code.</li>
+<li>Ti chiedera’ di configurare automaticamente CMake tools, conferma.</li>
+<li>Clicca in basso su “CMake etc. etc.” per compilare con CMake. Ti potrebbe chiedere la destinazione della compilazione, una qualsiasi destinazione x86 o x64 andra’ bene.</li>
+<img src="./img/cmake.png" alt="alt"></li>
+<li>Dopo che ha compilato, apri il terminale di Visual Studio con i developer tools, ti basta aprire la barra di ricerca di Windows e scrivere  <em>Cross tools x86 x64 Command prompt</em><br>
+<img src="./img/searchBar.png" alt="alt"></li>
+<li>Vai nella cartella <code>HW1\out\build\vscode\x64-Debug</code> tramite il comando <code>cd</code> e poi scrivi:</li>
+</ul>
+<pre><code>ninja
+</code></pre>
+<ul>
+<li>Premi invio</li>
+<img src="./img/crossTools.png" alt="alt"></li>
+<li>Se la compilazione avra’ successo, troverai i tuoi file in <code>HW1/out/bin/debug/</code>, puoi trascinare un’immagine sopra <code>yimgigrades.exe</code> e te lo aprira’ con l’editor.</li>
+</ul>
+</div>
+</body>
+
+</html>
