@@ -4,7 +4,7 @@ bio:            'hey there! welcome!'
 description:    "jacob's projects and other stuff"
 picture:        'assets/img/Logo.png'
 locale:         en_GB
-url:            https://jcb936.github.io
+url:            https://studioleena.me
 
 # Jekyll
 permalink:      /:title/
