@@ -24,6 +24,7 @@ sass:
 # if you don't have any of social below, comment the line.
 #email:
 twitter: username
+mastodon: username
 facebook: username
 #google:
   #plus: #username
