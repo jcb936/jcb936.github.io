@@ -1,17 +1,19 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, ramme]
-date: 2016-03-21
+title: about me
+tags: [about]
+date: 2023-01-21
 ---
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
 
-**Ramme** is a simple jekyll theme.
+Hey there! I'm **Jacob Arbib** (*he/him*), a game developer based in London (UK) and originally from Rome (Italy).
      
-I made this theme after seeing this [screenshot](http://spoonm.org/share/rice/01.png). I took some parts from @mmistakes, like TOC, sample posts. I never tought making a theme from scratch would be this hard. And it's still WIP.
-     
-I'm not a designer or something, so I'm sure there is a better way to make this theme. But it's working and looks acceptable for different screen sizes. If something looks extremely ugly and you can't resist to fix it, just send me a PR. I will be grateful.
-     
-You want to **use it?**      
+I am currently working full-time as a systems programmer at [Splash Damage](https://www.splashdamage.com/) on [Transformers: Reactivate](https://www.playtfr.com/). This is the lil corner of the internet where I will collect my personal projects and occasionally write some blog posts on a variety of topics. 
+
+I also go by *renard* on the web, you (if you speak Italian) might know me for the Italian translations of UNDERTALE and DELTARUNE, [more info here]({{ site.url }}/undertale-spaghetti-project). 
+
+In my spare time I like to experiment with photography and mixed media; while I still need to properly curate and collect my photos, you can see *some* of them on my [Instagram](https://www.instagram.com/renard936/).
+
+Finally, you can reach me via e-mail at [jacob.arbib@gmail.com](mailto:jacob.arbib@gmail.com) and you can find an (hopefully) up-to-date CV by clicking the download link below. Feel free to reach out if you have any questions or you want some info on any obscure projects I have done in the past that is not posted here.
       
-[Install Ramme](https://github.com/TaylanTatli/Ramme){: .btn}
+[CV](/assets/download/CVLatest_2023.pdf){: .btn}
