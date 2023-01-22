@@ -9,7 +9,7 @@ tag:
 - translation_project
 ---
      
-## About
+## about
      
 From 2015 to 2021, I have lead a project for the Italian translation of Toby Fox's games UNDERTALE and DELTARUNE. **Undertale Spaghetti Project** is a passionate group of programmers, designers, translators and artists all working non-profit to make these games accessible to people who don't speak English. We developed in-house tools to reverse engineer the games code to access the original script and inject code and translated sprites, developed a workflow for translators and proofreaders and cultivated the biggest Italian community for the games on Facebook. 
 

@@ -348,9 +348,12 @@ body {
 		top: 6.65em;
 	}
 	.author-social {
+		// padding: 0.7em;
+		// margin: 0.188em;
+		// font-size: 0.625em;
 		padding: 0.7em;
-		margin: 0.188em;
-		font-size: 0.625em;
+		margin: 0.375em;
+		//font-size: 0.688em;
 	}
 	.toc {
 		background: $color_0;
@@ -381,7 +384,7 @@ body {
 	.author-social {
 		padding: 0.7em;
 		margin: 0.375em;
-		font-size: 0.688em;
+		//font-size: 0.688em;
 	}
 	.toc {
 		background: $color_0;
@@ -400,7 +403,7 @@ body {
 	.author-social {
 		padding: 0.7em;
 		margin: 0.375em;
-		font-size: 0.75em;
+		//font-size: 0.75em;
 	}
 }
 @media only screen and(min-width: 1300px) and(max-width: 1800px) {
@@ -413,7 +416,7 @@ body {
 	.author-social {
 		padding: 0.7em;
 		margin: 0.375em;
-		font-size: 0.813em;
+		//font-size: 0.813em;
 	}
 }
 @media only screen and(min-width: 1050px) {
