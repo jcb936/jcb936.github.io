@@ -24,10 +24,10 @@ A closed beta for the game is planned in 2023. Stay tuned for more info! Click t
 
 [Official website](https://www.playtfr.com/){: .btn}
 
-<figure>
+<!-- <figure>
 	<img src="/assets/img/tfr1.png">
 </figure>
 
 <figure>
 	<img src="/assets/img/tfr2.png">
-</figure>
+</figure> -->
