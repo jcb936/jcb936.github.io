@@ -6,7 +6,10 @@
 - title: blog
   url: /blog/
 
-- title: projects
+- title: work
+  url: /work/
+
+- title: personal
   url: /projects/
 
 - title: about
