@@ -8,8 +8,6 @@ tag:
 - university
 ---
      
-## about
-     
 During my [**MSc in Computer Games Technology at City, University of London**](https://www.city.ac.uk/prospective-students/courses/postgraduate/computer-games-technology), I had the occasion of playing around with a variety of different technologies, and had the occasion to produce multiple projects as coursework. These include, but are not limited to:
 
 * A simple bullet-hell shooter in MonoGame
