@@ -1,14 +1,14 @@
             <div class="social-links">
-                {% if site.email %}<a href="mailto:{{ site.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i></a>{% endif %}
-                {% if site.twitter %}<a href="http://twitter.com/{{ site.twitter }}" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i></a>{% endif %}
-                {% if site.mastodon %}<a href="https://mastodon.gamedev.place/@{{ site.mastodon }}" class="author-social" target="_blank"><i class="fa-brands fa-mastodon"></i></a>{% endif %}
+                {% if site.email %}<a href="mailto:{{ site.email }}" title="send me an e-mail!" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i></a>{% endif %}
+                {% if site.twitter %}<a href="http://twitter.com/{{ site.twitter }}" title="find me on twitter"class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i></a>{% endif %}
+                {% if site.mastodon %}<a href="https://mastodon.gamedev.place/@{{ site.mastodon }}" title="mastodon profile" class="author-social" target="_blank"><i class="fa-brands fa-mastodon"></i></a>{% endif %}
                 {% if site.facebook %}<a href="http://facebook.com/{{ site.facebook }}" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i></a>{% endif %}
                 {% if site.google.plus %}<a href="http://plus.google.com/+{{ site.google.plus }}" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i></a>{% endif %}
-                {% if site.linkedin %}<a href="http://linkedin.com/in/{{ site.linkedin }}" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a>{% endif %}
+                {% if site.linkedin %}<a href="http://linkedin.com/in/{{ site.linkedin }}" title="linkedin profile" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a>{% endif %}
                 {% if site.xing %}<a href="http://www.xing.com/profile/{{ site.xing }}" class="author-social" target="_blank"><i class="fa fa-fw fa-xing-square"></i></a>{% endif %}
-                {% if site.instagram %}<a href="http://instagram.com/{{ site.instagram }}" class="author-social" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>{% endif %}
+                {% if site.instagram %}<a href="http://instagram.com/{{ site.instagram }}" title="instagram" class="author-social" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>{% endif %}
                 {% if site.tumblr %}<a href="http://{{ site.tumblr }}.tumblr.com" class="author-social" target="_blank"><i class="fa fa-fw fa-tumblr-square"></i></a>{% endif %}
-                {% if site.github %}<a href="http://github.com/{{ site.github }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i></a>{% endif %}
+                {% if site.github %}<a href="http://github.com/{{ site.github }}" title="github" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i></a>{% endif %}
                 {% if site.stackoverflow %}<a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" class="author-social" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i></a>{% endif %}
                 {% if site.lastfm %}<a href="http://lastfm.com/user/{{ site.lastfm }}" class="author-social" target="_blank"><i class="fa fa-fw fa-music"></i></a>{% endif %}
                 {% if site.dribbble %}<a href="http://dribbble.com/{{ site.dribbble }}" class="author-social" target="_blank"><i class="fa fa-fw fa-dribbble"></i></a>{% endif %}
@@ -20,5 +20,6 @@
                 {% if site.weibo %}<a href="http://www.weibo.com/{{ site.weibo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>{% endif %}
                 {% if site.flickr %}<a href="http://www.flickr.com/{{ site.flickr }}" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i></a>{% endif %}
                 {% if site.codepen %}<a href="http://codepen.io/{{ site.codepen }}" class="author-social" target="_blank"><i class="fa fa-fw fa-codepen"></i></a>{% endif %}
-                {% if site.itch %}<a href="http://{{ site.itch }}.itch.io" class="author-social" target="_blank"><i class="fa-brands fa-itch-io"></i></a>{% endif %}
+                {% if site.itch %}<a href="http://{{ site.itch }}.itch.io" title="itch.io" class="author-social" target="_blank"><i class="fa-brands fa-itch-io"></i></a>{% endif %}
+                <a href="/assets/download/CVLatest_2023.pdf" title="download my CV!" class="author-social" target="_blank"><i class="fa-solid fa-briefcase"></i></a>
             </div>
