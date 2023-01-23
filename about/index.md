@@ -7,6 +7,8 @@ date: 2023-01-21
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
 
 Hey there! I'm **Jacob** (*he/him*), a game developer based in London (UK) and originally from Rome (Italy).
+
+I'm a *BSc Discrete Mathematics* graduate from the *University of Warwick* and an *MSc Computer Games Technology* graduate from *City, University of London*.
      
 I am currently working full-time as a systems programmer at [Splash Damage](https://www.splashdamage.com/) on [Transformers: Reactivate](https://www.playtfr.com/). This is the lil corner of the internet where I will collect my personal projects and occasionally write some blog posts on a variety of topics. 
 
