@@ -17,6 +17,6 @@ From 2015 to 2021, I have lead a project for the Italian translation of Toby Fox
 
 A case study was conducted on us by Laura Previtali (MA Audiovisual Translation); *Fan Translation of Video Games – A Case Study: The Spaghetti Project*, L. Previtali, Dr. M. A. Bernal-Merino, Roehampton University, 2018. She would later join the team as a translator and proofreader.
 
-The project is currently on hiatus.
+The patches have been released, the project is not under active manteinance at the moment.
 
 [Visit USP website (in Italian)](https://undertaleita.net/){: .btn}
