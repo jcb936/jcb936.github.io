@@ -8,7 +8,7 @@ tag:
 - c++
 ---
 
-# Introduction
+## Introduction
 
 One constantly found code paradigm in Unreal Engine's C++ is this one:
 {% highlight c++ %}
