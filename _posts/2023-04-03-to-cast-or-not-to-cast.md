@@ -8,6 +8,8 @@ tag:
 - c++
 ---
 
+{% include toc.html %}
+
 # Introduction
 
 One constantly found code paradigm in Unreal Engine's C++ is this one:
