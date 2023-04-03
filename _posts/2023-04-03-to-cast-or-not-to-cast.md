@@ -49,7 +49,7 @@ Now, these methods can be used at runtime to get the *UClass* for an object or a
 
 Now that we know what tools we have to understand the types of our *UObjects*, let's see the different methods of casting in UE.
 
-## `ExactCast<T>()`
+## _ExactCast_
 This is a simple and nice one. *ExactCast* can be used when we are sure of the type we are dealing with, but we still want to be able to check against *nullptr*. The implementation is the following:
 {% highlight c++ %}
 template< class T >  
@@ -60,7 +60,7 @@ FORCEINLINE T* ExactCast( UObject* Src )
 {% endhighlight %}
 If we are dealing with *UObjects* types this is a great alternative to C-like casts or C++ *static_cast*. We have the RTTI, and we have no reason to not exploit that info for a fast check even if we need no polymorphism at all.
 
-## `Cast<T>()`
+## _Cast_
 This is the meaty and most important one. *Cast* is our *dynamic_cast* equivalent, checking the type against the inheritance chain at runtime and letting us exploit polymorphism to its fullest. But how does Unreal do it, and does it do any optimisation exploiting the type info we have? Let's see:
 {% highlight c++ %}
 // The original Cast method will eventually expand into the one below.
@@ -123,7 +123,7 @@ Ok, this makes sense, as we said we know that *UClasses* have a pointer to their
 {% endhighlight %}
 Stuff is finally getting interesting, here we can see that UE defines the *IsChildOf* method depending on a preprocessor definition. UE has two implementations of the *IsChildOf* methods, one safer and used in editor builds, the other faster and used in builds. These methods are defined in the *UStruct* class, which is the base class of *UClass*; for our purposes the two are interchangeable. Let's now look at these two different implementations:
 
-### `USTRUCT_ISCHILDOF_OUTERWALK`
+### *USTRUCT_ISCHILDOF_OUTERWALK*
 This is the safer method and it's used when we are running the editor. The implementation is pretty straightforward, and we simply walk the inheritance chain of the *UClasses* until we find a match, or return false otherwise.
 {% highlight c++ %}
 // Method simplified for explanation purposes
@@ -152,7 +152,7 @@ bool UStruct::IsChildOf( const UStruct* SomeBase ) const
 }
 {% endhighlight %}
 Easy and nice, this is _O(n)_, where _n_ is the depth of the inheritance tree. It is pretty much as efficient as you can get with an enforced single inheritance naive dynamic cast algorithm. But can we do better? Does Unreal add any other optimisation? That's where the second *IsChildOf* comes in.
-### `USTRUCT_ISCHILDOF_STRUCTARRAY`
+### *USTRUCT_ISCHILDOF_STRUCTARRAY*
 Here is the implementation for the second method, which is used in non-editor builds:
 {% highlight c++ %}
 bool IsChildOf(const UStruct* SomeBase) const  
@@ -186,7 +186,7 @@ FORCEINLINE bool IsChildOfUsingStructArray(const FStructBaseChain& Parent) const
 }
 {% endhighlight %}
 Neat! This information is part of the metadata generated for *UClasses*, and it's serialised in non-editor builds. This is pretty much how Unreal deals with fast casting! The reason why this is not used in editor builds is that this could easily break when re-instancing blueprints or hot-patching data.
-## `CastChecked<T>()`
+## _CastChecked_
 We are almost at the end! What if you want to dynamically cast an object but you are not planning to branch in case the cast fails? In fact, you pretty much would prefer the program to crash in that case, so that you can fix the data properly. Well, that's where *CastChecked* comes in:
 {% highlight c++ %}
 template <typename To, typename From>  
