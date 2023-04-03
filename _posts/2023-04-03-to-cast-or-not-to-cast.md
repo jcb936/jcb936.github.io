@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "To Cast or not to Cast"
-date:   2023-04-04
+date:   2023-04-03
 excerpt: "A little deep dive into UE's UObject Casts"
 tag:
 - blog
 - c++
 ---
 
-## Introduction
+# Introduction
 
 One constantly found code paradigm in Unreal Engine's C++ is this one:
 {% highlight c++ %}
