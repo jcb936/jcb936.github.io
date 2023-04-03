@@ -3,7 +3,6 @@ layout: post
 title:  "To Cast or not to Cast"
 date:   2023-04-04
 excerpt: "A little deep dive into UE's UObject Casts"
-work: true
 tag:
 - blog
 - c++
