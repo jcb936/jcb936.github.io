@@ -31,7 +31,7 @@ What this code does is pretty straightforward; we have a pointer to some actor, 
 
 We will only investigate the case of *UObject* to *UObject* casting, *UInterfaces* are handled differently (we might go into them some other time).
 
-# So, what metadata does UHT generates for us?
+# So, what metadata does UHT generate for us?
 *A lot.*
 But for our needs, we only need to care about the fact that every UCLASS marked class, when parsed by UHT, will have access to the following methods and fields (the latter is declared in those *generated.h* files you constantly forget to include):
 {% highlight c++ %}
