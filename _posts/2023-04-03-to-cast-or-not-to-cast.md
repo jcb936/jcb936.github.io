@@ -231,7 +231,7 @@ Type of cast | Speed | Usage
 -------- | ----- | ------
 `CastChecked<T>()` | Fastest on Test/Shipping builds. As fast as `Cast<T>()` otherwise | Perfect when we don't want to handle the failed cast and we want to make sure that the data is correct during development.
 `ExactCast<T>()` | Faster than `Cast<T>()` and slower than `CastChecked<T>()` on Test/Shipping builds | Perfect replacement for static casts when we deal with UObjects. To be used when we are sure of the type we are dealing with.
-`Cast<T>()` | Slowest of the three. Optimised for non-editor builds.  | For all the other scenarios, this should be your go-to.
+`Cast<T>()` | Slowest of the three. Optimised on non-editor builds.  | For all the other scenarios, this should be your go-to.
 {: rules="groups"}
 
 Hopefully, this was informative! Feel free to get in touch with a mail if you spot any mistakes or if you have any feedback, I might be implementing a comment section to the posts... eventually.
