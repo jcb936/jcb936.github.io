@@ -57,7 +57,7 @@ This is a simple and nice one. *ExactCast* can be used when we are sure of the t
 template< class T >  
 FORCEINLINE T* ExactCast( UObject* Src )  
 {  
-   return Src && (Src->GetClass() == T::StaticClass()) ? (T*)Src : nullptr;  
+	return Src && (Src->GetClass() == T::StaticClass()) ? (T*)Src : nullptr;  
 }
 {% endhighlight %}
 If we are dealing with *UObjects* types this is a great alternative to C-like casts or C++ *static_cast*. We have the RTTI, and we have no reason to not exploit that info for a fast check even if we need no polymorphism at all.
@@ -73,7 +73,7 @@ struct TCastImpl<From, To, ECastType::UObjectToUObject>
 {  
 	FORCEINLINE static To* DoCast( UObject* Src )  
 	{  
-	   return Src && Src->IsA<To>() ? (To*)Src : nullptr;  
+		return Src && Src->IsA<To>() ? (To*)Src : nullptr;  
 	}
 
 	[...]
@@ -159,7 +159,7 @@ Here is the implementation for the second method, which is used in non-editor bu
 {% highlight c++ %}
 bool IsChildOf(const UStruct* SomeBase) const  
 {  
-   return (SomeBase ? IsChildOfUsingStructArray(*SomeBase) : false);  
+	return (SomeBase ? IsChildOfUsingStructArray(*SomeBase) : false);  
 }
 
 FORCEINLINE bool IsChildOfUsingStructArray(const FStructBaseChain& Parent) const  
