@@ -6,7 +6,7 @@ date: 2023-01-21
 ---
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
 
-Hey there! I'm **Jacob** (*he/him*), a game developer based in London (UK) and originally from Rome (Italy).
+Hey there! I'm **Jacob** (*he/they*), a game developer based in London (UK) and originally from Rome (Italy).
 
 I'm a *BSc Discrete Mathematics* graduate from the *University of Warwick* and an *MSc Computer Games Technology* graduate from *City, University of London*.
 

@@ -31,6 +31,10 @@ What this code does is pretty straightforward; we have a pointer to some actor, 
 
 We will only investigate the case of *UObject* to *UObject* casting, *UInterfaces* are handled differently (we might go into them some other time).
 
+## Acknowledgement
+
+Before we dive in, it's good to remember that discussing performance for this kind of things gets complicated really fast when we go deeper than the immediate high level algorithmic performance, and with all the optimisations that a compiler will execute, it's also often not very useful; so please **note** that I haven't taken any measurement for speed for any of the casting methods shown here. This should be more taken as a little academic exploration of Unreal Engine's source code to see how Unreal handles polymorphism.
+
 # So, what metadata does UHT generate for us?
 *A lot.*
 But for our needs, we only need to care about the fact that every UCLASS marked class, when parsed by UHT, will have access to the following methods and fields (the latter is declared in those *generated.h* files you constantly forget to include):
@@ -223,7 +227,7 @@ FORCEINLINE static To* DoCastCheckedWithoutTypeCheck( UObject* Src )
 	return (To*)Src;  
 }
 {% endhighlight %}
-Now, this is interesting; it's just a raw cast! You cannot really do it faster than this. The idea is that since you've most likely crashed (hopefully not too many times) while fixing the data in development, on *Test* and *Shipping* you can now have the guarantee and peace of mind that the data is correct and the cast will be successful.  This is a nice optimisation, but of course, it's very important for this to be used only with casts that shouldn't fail at all. 
+Now, this is interesting; it's just a raw cast! The idea is that since you've most likely crashed (hopefully not too many times) while fixing the data in development, on *Test* and *Shipping* you can now have the guarantee and peace of mind that the data is correct and the cast will be successful.  This is a nice optimisation, but of course, it's very important for this to be used only with casts that shouldn't fail at all. 
 # The bottom line
 We've reached the end! Let's use this section to review the type of casts we saw and when we really should use them:
 
