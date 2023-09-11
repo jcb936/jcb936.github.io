@@ -89,7 +89,7 @@ We will **hard reference** BP_Test in that blueprint, meaning that BP_Test with 
 
 Before we go into good practices to avoid hard references, we need to understand the different object pointer types we can use in code.
 
-## `TObjectPtr<T>` / Raw Pointers
+## TObjectPtr<T> / Raw Pointers
 
 These are our basic pointer types. `TObjectPtr<T>` or raw pointers are equivalent in the fact that they create a hard reference on other
 objects. The former was introduces with UE5, and it adds some helpful features for instance tracking on editor and better null pointers debugging in non-shipping builds, but apart from that they are completely equivalent on the memory and referencing front on a shipping build. These should be the ones you should look out for, and use them only for things like component references for an actor, or other objects you are sure should be hard referenced.
@@ -104,9 +104,10 @@ UPROPERTY()
 TObjectPtr<UActorComponent> Component{};
 {% endhighlight %}
 
-> Prefer using `TObjectPtr` over raw pointers. It looks like the intention for Unreal is eventually getting rid of raw pointers in game code. Furthermore `TObjectPtr` might introduce new useful features for editor references in the future, so good practice to future-proof our code.
+>Prefer using `TObjectPtr` over raw pointers. It looks like the intention for Unreal is eventually getting rid of raw pointers in game code. Furthermore `TObjectPtr` might introduce new useful features for editor references in the future, so good practice to future-proof our code.
+{: .notice}
 
-## `TWeakObjectPtr<T>`
+## TWeakObjectPtr<T>
 
 This is an incredibly useful one. Say you want to reference an actor or an object you don’t want to have direct ownership over but you still need to reference. TWeakObjectPtr should be your go-to in this case. They are pretty much equivalent to C++ weak pointer types ([RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) etc.). The following is a fast example of how to use them:
 
@@ -131,7 +132,7 @@ void AMyClass::Foo()
 
 This has also the added benefit that MyClass doesn’t contribute to the garbage collection of AOtherActor. Meaning that the AOtherActor instance might be garbage collected even if we are still referencing. This is useful and pretty desirable in a lot of cases.
 
-## `TSoftObjectPtr<T>`
+## TSoftObjectPtr<T>
 
 If there’s one thing you might want to take away from this article is the importance of **async loadings**. One good way to avoid hard references is soft referencing an object and async load it only when we need it. This is achieved by using a `TSoftObjectPtr<T>`. The idea is that we use a StreamableManager to async load one or a list of objects and call a delegate when the loading is complete. In the below example, we have a StreamableManager in our GameInstance, and we call it to do our async loadings:
 
@@ -161,7 +162,8 @@ void AMyClass::LoadMeshDeferred()
 
 From a `TSoftObjectPtr`, you can also **sync load** the object to be used immediately using the `LoadSynchronous()` method on the pointer. This stalls the load queue, and should generally be avoided completely and used only during init operations of a class potentially (although if you need something alive for the entire lifetime of an object you probably want another type of pointer).
 
-> Avoid sync loading objects.
+Avoid sync loading objects.
+{: .notice}
 
 # Blueprint soft object references types
 
