@@ -104,7 +104,7 @@ UPROPERTY()
 TObjectPtr<UActorComponent> Component{};
 {% endhighlight %}
 
->Prefer using `TObjectPtr` over raw pointers. It looks like the intention for Unreal is eventually getting rid of raw pointers in game code. Furthermore `TObjectPtr` might introduce new useful features for editor references in the future, so good practice to future-proof our code.
+Prefer using `TObjectPtr` over raw pointers. It looks like the intention for Unreal is eventually getting rid of raw pointers in game code. Furthermore `TObjectPtr` might introduce new useful features for editor references in the future, so good practice to future-proof our code.
 {: .notice}
 
 ## TWeakObjectPtr<T>
