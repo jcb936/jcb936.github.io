@@ -10,7 +10,7 @@ Hey there! I'm **Jacob** (*he/they*), a game developer based in London (UK) and 
 
 I'm a *BSc Discrete Mathematics* graduate from the *University of Warwick* and an *MSc Computer Games Technology* graduate from *City, University of London*.
 
-I am working full-time as a gameplay programmer for [ZA/UM](https://zaumstudio.com/) on an unannounced project. I also previously worked as systems programmer for [Splash Damage](https://www.splashdamage.com/) on [Transformers: Reactivate](https://www.playtfr.com/). This is the lil corner of the internet where I will collect my personal projects and occasionally write some blog posts on a variety of topics. 
+I am working full-time as an engine programmer for [Larian](https://larian.com/). I also previously worked as unreal engine programmer for [ZA/UM](https://zaumstudio.com/) and as systems programmer for [Splash Damage](https://www.splashdamage.com/) on [Transformers: Reactivate](https://www.playtfr.com/). This is the lil corner of the internet where I will collect my personal projects and occasionally write some blog posts on a variety of topics. 
 
 I also go by *renard* on the web, you (if you speak Italian) might know me for the Italian translations of UNDERTALE and DELTARUNE, [more info here]({{ site.url }}/undertale-spaghetti-project). 
 
