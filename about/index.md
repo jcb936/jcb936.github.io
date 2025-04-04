@@ -18,4 +18,4 @@ In my spare time I like to experiment with photography and mixed media; while I 
 
 Finally, you can reach me via e-mail at [jacob.arbib@gmail.com](mailto:jacob.arbib@gmail.com) and you can find a (hopefully) up-to-date CV by clicking the download link below. Feel free to reach out if you have any questions or if you want info about any obscure project I have done in the past that is not posted here.
       
-[CV](/assets/download/CVLatest_2023.pdf){: .btn}
+[CV](/assets/download/CVLatest_2025.pdf){: .btn}
