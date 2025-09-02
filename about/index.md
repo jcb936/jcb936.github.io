@@ -14,8 +14,8 @@ I am working full-time as an engine programmer for [Larian](https://larian.com/)
 
 I also go by *renard* on the web, you (if you speak Italian) might know me for the Italian translations of UNDERTALE and DELTARUNE, [more info here]({{ site.url }}/undertale-spaghetti-project). 
 
-In my spare time I like to experiment with photography and mixed media; while I still need to properly curate and collect my photos, you can see *some* of them on my [Instagram](https://www.instagram.com/renard936/).
+Apart from games, I spend my spare time doing photography and experimenting with mixed media. I also love playing Magic: The Gathering and bouldering.
 
-Finally, you can reach me via e-mail at [jacob.arbib@gmail.com](mailto:jacob.arbib@gmail.com) and you can find a (hopefully) up-to-date CV by clicking the download link below. Feel free to reach out if you have any questions or if you want info about any obscure project I have done in the past that is not posted here.
+You can reach me via e-mail at [jacob.arbib@gmail.com](mailto:jacob.arbib@gmail.com) and you can find a (hopefully) up-to-date CV by clicking the download link below. Feel free to reach out if you have any questions or if you want info about any obscure project I have done in the past that is not posted here.
       
 [CV](/assets/download/CVLatest_2025.pdf){: .btn}
